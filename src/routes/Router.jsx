@@ -14,6 +14,8 @@ import EventDetail from '../pages/Event/EventDetail/EventDetail';
 import Portfolio from '../pages/Portfolio/Portfolio';
 import PortfolioDetail from '../pages/Portfolio/Detail/PortfolioDetail';
 import ReservationBoard from '../pages/Reservation/ReservationBoard/ReservationBoard';
+import EventCreate from '../pages/Event/EventCreate/EventCreate';
+import PortfolioCreate from '../pages/Portfolio/PortfolioCreate/PortfolioCreate';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +67,10 @@ const router = createBrowserRouter([
         element: <Event />,
       },
       {
+        path: '/event-create',
+        element: <EventCreate />,
+      },
+      {
         path: '/event/:id',
         element: <EventDetail />,
       },
@@ -75,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: '/portfolio/:portfolioId',
         element: <PortfolioDetail />,
+      },
+      {
+        path: '/portfolio-create',
+        element: <PortfolioCreate />,
       },
     ],
   },

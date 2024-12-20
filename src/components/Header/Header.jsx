@@ -11,7 +11,7 @@ const Header = () => {
   const navItems = [
     { label: '포트폴리오', path: '/portfolio', },
     { label: '자재', path: '/materials', },
-    { label: '견적 문의', path: '/reservation', },
+    { label: '견적 문의', path: '/reservation-board', },
     { label: '이벤트', path: '/event', },
   ];
   const links = [
@@ -35,15 +35,23 @@ const Header = () => {
           ))
         }
       </nav>
-      <nav className={styles.linkItems}>
+      <div className={styles.rightBox}>
         {
-          links.map((item) => (
-            <a key={item.label} href={item.path} target='_blank'>
-              {item.Component}
-            </a>
-          ))
+          localStorage.getItem('ACCESS_TOKEN') ? 
+            <span className={styles.span}>관리자님, 환영합니다!</span>
+          :
+            null
         }
-      </nav>
+        <nav className={styles.linkItems}>
+          {
+            links.map((item) => (
+              <a key={item.label} href={item.path} target='_blank'>
+                {item.Component}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
     </header>
   );
 };

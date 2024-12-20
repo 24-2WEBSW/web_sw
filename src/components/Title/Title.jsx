@@ -1,8 +1,8 @@
 import styles from './Title.module.css';
 
-const Title = ({ children }) => {
+const Title = ({ children, url }) => {
   return (
-    <h1 className={styles.titleWrapper}>{children}</h1>
+    <h1 className={styles.titleWrapper} style={{backgroundImage:`url(${url})`}}>{children}</h1>
   );
 };
 

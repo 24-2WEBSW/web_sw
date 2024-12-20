@@ -1,12 +1,11 @@
 import styles from './Input.module.css';
 
 const Input = ({ title, placeholder, value, setValue, name }) => {
-  console.log(name);
   const handleChange = (e) => {
-    setValue((prevValues) => ({
-      ...prevValues,
-      [name]: e.target.value,
-    }));
+      setValue((prevValues) => ({
+        ...prevValues,
+        [name]: e.target.value,
+      }));
   };
   
   return(

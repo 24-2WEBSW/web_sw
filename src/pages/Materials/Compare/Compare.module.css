@@ -8,6 +8,7 @@
   width: 100rem;
   display: flex;
   justify-content: space-between;
+  padding-top: 5rem;
   padding-bottom: 6rem;
 }
 .addImg {
@@ -34,4 +35,28 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.hr {
+  display: block;
+  width: 125rem;
+  margin-bottom: 2rem;
+}
+.titleText {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 7rem 0 2rem 0;
+}
+.text {
+  color: #3e3e3e;
+  font-family: Pretendard;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  padding-bottom: 5rem;
 }
